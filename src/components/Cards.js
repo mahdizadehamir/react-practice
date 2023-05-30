@@ -9,10 +9,10 @@ export default class Cards extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <Card image={iphone10} name="IPHONE X" cost="500$" />
-        <Card image={iphone11} name="IPHONE 11" cost="600$" />
-        <Card image={iphone12} name="IPHONE 12" cost="700$" />
-        <Card image={iphone13} name="IPHONE 13" cost="800$" />
+        <Card image={iphone10} name="IPHONE X" cost="500" />
+        <Card image={iphone11} name="IPHONE 11" cost="600" />
+        <Card image={iphone12} name="IPHONE 12" cost="700" />
+        <Card image={iphone13} name="IPHONE 13" cost="800" />
       </div>
     );
   }
