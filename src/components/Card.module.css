@@ -4,6 +4,7 @@
 }
 .container {
   margin: 10px;
+  width: 300px;
   background-color: #ececec;
   border-radius: 10px;
   overflow: hidden;
