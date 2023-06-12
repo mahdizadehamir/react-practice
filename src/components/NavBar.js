@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../images/horse-logo2.jpg";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const NavBar = () => {
               <Link to="/products" >Products</Link>
             </li>
             <li>
-              <Link to="/" >About</Link>
+              <Link to="/aboutus" >About</Link>
             </li>
           </ul>
         </div>

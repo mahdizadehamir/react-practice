@@ -4,16 +4,20 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Products from "./components/Products";
-import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, Routes } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
+import DetailedPage from "./components/DetailedPage";
 export default class App extends Component {
   render() {
     return (
       <div>
         <NavBar />
-        <Switch>
-          <Route path="/products" component={Products} />
-          <Route path="/" component={Landing} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/products/:id" element={<DetailedPage />} />
+        </Routes>
         <Footer />
       </div>
     );

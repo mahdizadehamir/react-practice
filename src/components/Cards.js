@@ -11,21 +11,25 @@ export default class Cards extends Component {
     this.state = {
       phones: [
         {
+          id:1,
           name: "IPHONE X",
           image: iphone10,
           cost: 500,
         },
         {
+          id:2,
           name: "IPHONE 11",
           image: iphone11,
           cost: 600,
         },
         {
+          id:3,
           name: "IPHONE 12",
           image: iphone12,
           cost: 700,
         },
         {
+          id:4,
           name: "IPHONE 13",
           image: iphone13,
           cost: 800 ,
@@ -46,6 +50,7 @@ export default class Cards extends Component {
             name={phone.name}
             image={phone.image}
             cost={phone.cost}
+            id={phone.id}
           />
         ))}
       </div>
