@@ -16,7 +16,10 @@ export default class App extends Component {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/aboutus/*" element={<AboutUs />}>
+            <Route path="programmers" element={<h1>HELLOW AMIR</h1>} />
+            <Route path="drivers" element={<h1>HELLOW Driver</h1>} />
+          </Route>
           <Route path="/products/:id" element={<DetailedPage />} />
           <Route path="/notfound" element={<NotFound />} />
           <Route path="/*" element={<Navigate to="/notfound" />} />
